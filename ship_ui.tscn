@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://q67fl2qrjq5t"]
+
+[ext_resource type="Texture2D" uid="uid://fc4iknn0ry2r" path="res://spaceship.png" id="1_71uuj"]
+[ext_resource type="Script" uid="uid://bv3tvnmjqtm3q" path="res://ship_ui.gd" id="1_jpu83"]
+
+[node name="ShipUI" type="Control" unique_id=364898397]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 60.0
+script = ExtResource("1_jpu83")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=872160302]
+layout_mode = 0
+offset_right = 2500.0
+offset_bottom = 2500.0
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_71uuj")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1299425601]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 31.0
+offset_right = 193.6087
+offset_bottom = 98.0
+theme_override_font_sizes/font_size = 48
+text = "0"
+horizontal_alignment = 1
